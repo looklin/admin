@@ -1,0 +1,43 @@
+body{
+  background:url(../background/纯色.png);
+  font-family:微软雅黑;
+}
+table{
+  margin: 60px auto; 
+  border:1px solid gray;
+}
+table th{
+  height: 40px;
+   border: 1px solid gray;
+}
+  table tr td{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid gray;
+    // animation: play 1s;
+    // animation: play 4s ease both;
+  }
+  table tr:nth-child(odd){
+    // background: #abcdef;
+    animation: play 2s ease infinite;
+    animation-direction:reverse;
+    /*border-bottom: 2px solid blue;*/
+  }
+  table tr:nth-child(even){
+    /*background: lime;*/
+  }
+  input{
+    border: none;
+    background: transparent;
+  }
+  td:hover{
+    background: #C9DD22;
+  }
+  @keyframes play{
+    // 0%{background:transparent;}
+    // 100%{background:#abcdef;}
+    from {background: #AEEEEE;}
+    to {background: #A4D3EE;}
+  }

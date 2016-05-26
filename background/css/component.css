@@ -1,0 +1,53 @@
+/* Header */
+*{
+	margin: 0;
+	padding: 0;
+}
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
+
+.login .large-header {
+	background: #7f8c8d;
+}
+
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	// text-align: center;
+	// -webkit-transform: translate3d(-50%,-50%,0);
+	// transform: translate3d(-50%,-50%,0);
+	left:-200px;
+	top:240px;
+	animation: play 2s ease both; 
+}
+
+.login .main-title {
+	font-size: 22px;
+	letter-spacing: 2px;
+	height:100px;
+	width:200px;
+	text-align: center;
+	line-height: 100px;
+}
+.login .main-title {
+	padding: 10px 40px;
+	border: 3px double #f9f1e9;
+	width:200px;
+	height:100px;
+	font-family: 微软雅黑;
+	border-radius: 5px;
+}
+@keyframes play{
+		0%{left: -200px;}
+		100%{left:540px;}
+	}
